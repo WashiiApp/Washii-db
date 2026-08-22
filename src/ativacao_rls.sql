@@ -1,0 +1,16 @@
+alter table usuario enable row level security;
+alter table lava_jato enable row level security;
+alter table cliente enable row level security;
+alter table categoria_servico enable row level security;
+alter table categoria_veiculo enable row level security;
+alter table servico enable row level security;
+alter table dias_semana enable row level security;
+alter table disponibilidade enable row level security;
+alter table veiculo enable row level security;
+alter table agendamento enable row level security;
+alter table notificacao enable row level security;
+alter table agendamento_servico enable row level security;
+alter table categoria_veiculo_servico enable row level security;
+alter table telefone enable row level security;
+alter table usuario_telefone enable row level security;
+alter table avaliacao enable row level security;
