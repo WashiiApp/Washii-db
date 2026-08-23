@@ -1,4 +1,4 @@
-CREATE POLICY "Envolvidos visualizam agendamentos"
+CREATE POLICY "Cliente ou Lava-jato visualizam seus agendamentos"
 ON agendamento
 FOR SELECT
 TO authenticated
@@ -29,7 +29,7 @@ WITH CHECK (
 );
 
 -- Clientes e Lava-jatos podem atualizar o agendamento
-CREATE POLICY "Envolvidos atualizam agendamentos"
+CREATE POLICY "Cliente ou Lava-jato atualizam seus agendamentos"
 ON agendamento
 FOR UPDATE
 TO authenticated
