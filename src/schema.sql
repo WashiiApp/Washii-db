@@ -107,7 +107,7 @@ create table agendamento (
   hora                time not null,
   preco_total         numeric(10,2) not null,
   duracao_total       time not null,
-  status_agendamento  varchar(20) not null,
+  status_agendamento  varchar(20) not null, -- <-(agendado, concluído ou cancelado) 
   -- dados de auditoria
   created_at          timestamptz not null default now(),
   updated_at          timestamptz,
