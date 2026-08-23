@@ -12,8 +12,8 @@ FOR INSERT
 TO authenticated
 WITH CHECK (id = auth.uid());
 
--- UPDATE: cliente edita aepnas o próprio perfil
-CREATE POLICY "cliente atualiza p´róprio perfil"
+-- UPDATE: cliente edita apenas o próprio perfil
+CREATE POLICY "cliente atualiza próprio perfil"
 ON cliente
 FOR UPDATE
 TO authenticated
