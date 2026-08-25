@@ -1,4 +1,4 @@
-SELECT: apenas dono do veículo e o lava jato veem/recebem
+-- SELECT: apenas dono do veículo e o lava jato veem/recebem
 CREATE POLICY "notificacao_select"
 ON notificacao
 FOR SELECT
@@ -12,7 +12,7 @@ USING (
   )
 );
 
-INSERT: sistema/usuários podem criar notificação para o agendamento
+-- INSERT: sistema/usuários podem criar notificação para o agendamento
 CREATE POLICY "notificacao_insert"
 ON notificacao
 FOR INSERT
@@ -26,7 +26,7 @@ WITH CHECK (
   )
 );
 
-UPDATE: pode alterar o statu, marcar como "lida" apenas quem está envolvido no agendamento
+-- UPDATE: pode alterar o statu, marcar como "lida" apenas quem está envolvido no agendamento
 CREATE POLICY "notificacao_update_scope"
 ON notificacao
 FOR UPDATE

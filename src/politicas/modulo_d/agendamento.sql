@@ -1,4 +1,4 @@
-SELECT: cliente vê agendamentos dos seus veículos e o lava-jato vê os agendamentos para seus serviços
+-- SELECT: cliente vê agendamentos dos seus veículos e o lava-jato vê os agendamentos para seus serviços
 CREATE POLICY "agendamento_select"
 ON agendamento
 FOR SELECT
@@ -12,7 +12,7 @@ USING (
   )
 );
 
-INSERT: cliente cria apenas o agendamento para o próprio veículo
+-- INSERT: cliente cria apenas o agendamento para o próprio veículo
 CREATE POLICY "agendamento_insert"
 ON agendamento
 FOR INSERT
@@ -25,7 +25,7 @@ WITH CHECK (
   )
 );
 
-UPDATE: O dono do veículo ou lava-jato dono do serviço podem atualizar
+-- UPDATE: O dono do veículo ou lava-jato dono do serviço podem atualizar
 CREATE POLICY "agendamento_update"
 ON agendamento
 FOR UPDATE
