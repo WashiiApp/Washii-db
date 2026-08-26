@@ -42,14 +42,14 @@ create table categoria_servico (
   id         uuid primary key default gen_random_uuid(),
   nome       varchar(100) not null,
   -- dados de auditoria
-  created_at timestamptz not null default now(),
+  created_at timestamptz not null default now()
 );
 
 create table categoria_veiculo (
   id         uuid primary key default gen_random_uuid(),
   nome       varchar(50) not null,
   -- dados de auditoria
-  created_at timestamptz not null default now(),
+  created_at timestamptz not null default now()
 );
 
 create table servico (
