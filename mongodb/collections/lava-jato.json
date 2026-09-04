@@ -1,0 +1,75 @@
+{
+  "_id": "ObjectId",
+  "email":"String",
+  "foto_perfil": "String",
+  "ativo": "Boolean",
+  "cnpj": "String",
+  "razao_social": "String",
+  "nome_fantasia": "String",
+  "fluxo_simultaneo": "Int32",
+  "created_at": "Date",
+  "updated_at": "Date",
+  "telefone": [
+    {
+      "ddd": "String",
+      "numero": "String"
+    }
+  ],
+  "endereco": {
+    "cidade": "String",
+    "estado": "String",
+    "numero": "String",
+    "bairro": "String",
+    "logradouro": "String",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [
+        "Double (longitude)",
+        "Double (latitude)"
+      ]
+    }
+  },
+  "disponibilidade": [
+    {
+      "dia_semana": "String",
+      "inicio": {
+        "hora": "Int32",
+        "minuto": "Int32"
+      },
+      "fim": {
+        "hora": "Int32",
+        "minuto": "Int32"
+      }
+    }
+  ],
+  "servicos": [
+    {
+      "_id": "ObjectId",
+      "nome": "String",
+      "descricao": "String",
+      "categoria_servico": "String",
+      "ativo": "Boolean",
+      "created_at": "Date",
+      "precos_por_categoria": [
+        {
+          "categoria_veiculo": "String",
+          "preco": "Decimal128",
+          "duracao_minuto": "Int32"
+        }
+      ],
+      "avaliacao_resumo": {
+        "media": "Double",
+        "total": "Int32",
+        "recentes": [
+          {
+            "id_avaliacao": "ObjectId",
+            "nome": "String",
+            "estrelas": "Int32",
+            "comentario": "String",
+            "created_at": "Date"
+          }
+        ]
+      }
+    }
+  ]
+}
