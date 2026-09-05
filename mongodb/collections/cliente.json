@@ -1,0 +1,30 @@
+{
+    "id":"objectId",
+    "email":"String",
+    "foto_perfil":"String",
+    "ativo": "boolean",
+    "cpf":"String",
+    "nome":"String",
+    "sobrenome":"String",
+    "create_at":"Date",
+    "update_at":"Date",
+    "telefone": [
+        {
+            "ddd":"String",
+            "numero":"String"
+        }
+    ],
+    "veiculos":[
+        {
+            "id":"objectId",
+            "modelo": "String",
+            "cor": "String",
+            "marca": "String",
+            "placa": "String",
+            "categoria_veiculo": "String",
+            "ativo": "boolean"
+        }
+    ]
+
+
+}
