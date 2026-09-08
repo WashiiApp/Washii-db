@@ -1,13 +1,13 @@
 {
-    "id":"objectId",
+    "_id":"objectId",
     "email":"String",
     "foto_perfil":"String",
     "ativo": "boolean",
     "cpf":"String",
     "nome":"String",
     "sobrenome":"String",
-    "create_at":"Date",
-    "update_at":"Date",
+    "created_at":"Date",
+    "updated_at":"Date",
     "telefone": [
         {
             "ddd":"String",
@@ -16,7 +16,7 @@
     ],
     "veiculos":[
         {
-            "id":"objectId",
+            "_id":"objectId",
             "modelo": "String",
             "cor": "String",
             "marca": "String",
