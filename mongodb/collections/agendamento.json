@@ -1,7 +1,4 @@
-/*
- * Modelo conceitual - Collection: agendamento
- */
-const agendamentoModel = {
+{
   _id: "ObjectId",
 
   data: "Date",
@@ -16,10 +13,7 @@ const agendamentoModel = {
     marca: "String",
     modelo: "String",
     cor: "String",
-    categoria_veiculo: {
-      id: "String",
-      nome: "String"
-    }
+    categoria_veiculo: "String"
   },
 
   cliente: {
@@ -45,8 +39,11 @@ const agendamentoModel = {
       cep: "String"
     },
     coordenadas: {
-      type: "String",       // "Point" (GeoJSON)
-      coordinates: ["Double"] // [longitude, latitude]
+      type: "String",   
+      coordinates: [
+        "Double",     
+        "Double"
+      ] 
     }
   },
 
@@ -55,13 +52,11 @@ const agendamentoModel = {
       id_servico: "String",
       nome: "String",
       categoria_servico: "String",
-      preco: "Double",
+      preco: "Decimal128",
       duracao: "Int32"
     }
   ],
 
   created_at: "Date",
   updated_at: "Date"
-};
-
-module.exports = agendamentoModel;
+}
