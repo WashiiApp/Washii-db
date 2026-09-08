@@ -1,0 +1,13 @@
+{
+  "_id": "ObjectId",
+  "id_agendamento": "ObjectId",
+  "id_usuario": "ObjectId",
+  "titulo": "String",
+  "mensagem": "String",
+  "lida": "Boolean",
+  "tipo_remetente": "String",
+  "data": "Date",
+  "hora": "String",
+  "created_at": "Date",
+  "updated_at": "Date"
+}

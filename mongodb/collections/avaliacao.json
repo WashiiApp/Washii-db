@@ -1,0 +1,11 @@
+{
+  "_id": "ObjectId",
+  "id_cliente": "ObjectId",
+  "id_lavajato": "ObjectId",
+  "id_servico": "ObjectId",
+  "nivel_satisfacao": "Int32",
+  "comentario": "String",
+  "data": "Date",
+  "created_at": "Date",
+  "updated_at": "Date"
+}
